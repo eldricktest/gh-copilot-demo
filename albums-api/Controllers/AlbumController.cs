@@ -25,7 +25,15 @@ namespace albums_api.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok();
+            var albums = Album.GetAll();
+            var album = albums.FirstOrDefault(a => a.Id == id);
+            
+            if (album == null)
+            {
+                return NotFound();
+            }
+            
+            return Ok(album);
         }
 
     }
