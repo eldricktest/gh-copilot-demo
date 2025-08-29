@@ -1,0 +1,17 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
