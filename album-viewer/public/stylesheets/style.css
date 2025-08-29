@@ -9,3 +9,25 @@
   font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #666;
 }
+
+/* Enhanced styling for the 3-column album layout */
+.ui.three.column.grid > .column {
+  margin-bottom: 1em;
+}
+
+.ui.card {
+  width: 100%;
+}
+
+.ui.card .image img {
+  width: 100%;
+  height: auto;
+}
+
+.ui.card .content .header {
+  margin-bottom: 0.5em;
+}
+
+.ui.card .content .meta {
+  line-height: 1.4;
+}
