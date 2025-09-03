@@ -3,17 +3,13 @@ extends layout
 block content 
     div(class="ui message attached " + background_color  style="height:50px") Greatest Hits
     div(class="ui attached segment")
-      div(class="ui divided items")
+      div(class="albums-grid")
         each album in albums
-          div(class="item")
-            div(class="ui image small")
-              img(src=album.image_url)
-            div(class="content")
-              div(class="header")
-                span(class="album-title")=album.title
-              div(class="meta")
-                span(class="meta-info")=album.artist
-                span(class="meta-info")=album.price
+          div(class="album-card")
+            img(src=album.image_url alt=album.title)
+            div(class="header album-title")=album.title
+            div(class="meta meta-info")=album.artist
+            div(class="meta meta-info")=`$${album.price}`
       
 
   
